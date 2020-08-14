@@ -54,23 +54,14 @@ class Main {
             lineTwo = lineTwo.substring(0, lineTwo.length()-1);
             if(processedLineOne.equalsIgnoreCase(lineTwo)){
               String toSave = matched+"\n"+matchedCloud+lineTwo+"\n"+matchedLocal+processedLineOne;
-              //System.out.println(toSave);
               try{
                  resultFile.write(toSave);
               }catch(Exception e){
-                System.out.println("Fucked");
                   e.printStackTrace();
               }
-               
-              // resultFile.write(matchedCloud+lineTwo);
-              // resultFile.write(matchedLocal+processedLineOne);
-              // System.out.println("Match");
-              // System.out.println(processedLineOne);
-              // System.out.println(lineTwo);
             }
           }
             scCloud.close();
-             //System.out.println("end loop");
         } 
          scRansom.close();
          final long endTime = System.currentTimeMillis();
