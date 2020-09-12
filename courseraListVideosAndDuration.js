@@ -1,3 +1,5 @@
+//for planning
+
 let tasks = document.getElementsByClassName("rc-WeekSingleItemDisplay")
 let outstring = ''
 for(let i = 0; i<tasks.length; i++){
